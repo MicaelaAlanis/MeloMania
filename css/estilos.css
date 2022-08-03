@@ -1,54 +1,51 @@
 :root {
-    --color1: black; 
-    --color2: violet;
-    --color3: pink;
-    --color4: blue;
-}
-
+  --color1: black;
+  --color2: violet;
+  --color3: pink;
+  --color4: blue; }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-     
-    body {
-        background-color: rgb(0, 0, 0);
-        font-family: 'Odibee Sans', cursive;
-         }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-    /* -----------------------------------------------------------------GRID----*/
+body {
+  background-color: black;
+  font-family: 'Odibee Sans', cursive; }
+
+/* -----------------------------------------------------------------GRID----*/
 .grid {
-    display: grid;
-    grid-template-areas: "header"
-   "main"
-   "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto; }
-    .grid header {
-      grid-area: header; }
-    .grid main {
-      grid-area: main; }
-    .grid footer {
-      grid-area: footer; }
-  
-  /*--------------------------------------------------------------------GRID---*/  
-      /*-----------------------------------------------------------------------Header---*/
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto; }
+  .grid .grid header {
+    grid-area: header; }
+  .grid .grid main {
+    grid-area: main; }
+  .grid .grid footer {
+    grid-area: footer; }
+
+/*--------------------------------------------------------------------GRID---*/
+/*-----------------------------------------------------------------------Header---*/
 .header {
-    background-image: url("../recursos/fondo4.jpeg");
-    background-color: rgb(0, 0, 0);
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-    height: auto; }
-.header__titulo {
+  background-image: url("../recursos/fondo4.jpeg");
+  background-color: black;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto; }
+  .header .header__titulo {
     display: flex;
-    justify-content: center; }
-.header__h1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .header .header__h1 {
     font-family: 'Rock Salt', cursive;
     text-decoration: wavy;
     text-transform: none;
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(197, 3, 61);
+    color: #c5033d;
     font-size: 3.5rem;
     font-style: normal;
     font-weight: 800;
@@ -56,290 +53,234 @@
     text-align: center;
     text-shadow: 10px 10px 10px #000000;
     padding-bottom: 1rem;
-    margin: 1rem 1rem 2rem 0rem;                    }
-.header__irabajo {
+    margin: 1rem 1rem 2rem 0rem; }
+  .header .header__irabajo {
     margin-left: 2rem;
     background-color: rgba(0, 0, 0, 0);
-    text-shadow: 15px 15px 15px rgb(0, 0, 0); }
-.irabajo {
+    text-shadow: 15px 15px 15px black; }
+  .header .irabajo {
     margin-top: 0.5rem;
     padding: 0;
     font-size: 1rem; }
-.navbar__texto {
+  .header .navbar__texto {
     font-size: 1.5rem;
     font-family: 'Odibee Sans', cursive;
     font-weight: 400;
     color: rgba(253, 253, 253, 0.788);
     text-shadow: 3px 3px 3px #0000005b; }
-.navbar__texto:hover {
+  .header .navbar__texto:hover {
     text-decoration: underline; }
-.navbar__texto2 {
+  .header .navbar__texto2 {
     font-size: 1.5rem;
     font-family: 'Odibee Sans', cursive;
     color: black;
     font-weight: 600; }
-      
-      /*--------------------------------------------------------Header------------*/  
 
-      /* ---------------------------------Footer------------------------------- */ 
+/*--------------------------------------------------------Header------------*/
+/* ---------------------------------Footer------------------------------- */
+footer {
+  background-image: url(../recursos/fondo4.jpeg);
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+  border: inset 4px #000000;
+  box-shadow: 10px 10px 20px black;
+  height: auto;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center; }
+  footer .footer__titulo {
+    color: #c5033d;
+    text-shadow: 5px 5px 5px #000000;
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600; }
+  footer .footer__menu {
+    list-style: none;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0; }
+  footer .footer__ul__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  footer .footer__menu li {
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    border-radius: 5px; }
+    footer .footer__menu li:hover {
+      text-decoration: underline; }
+    footer .footer__menu li:hover {
+      text-decoration: underline; }
+  footer .footer__menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-shadow: 5px 5px 5px black; }
+  footer .redes {
+    display: flex;
+    color: white;
+    text-shadow: 5px 5px 5px black; }
+  footer .fa-twitter:before {
+    font-size: 1.6rem;
+    color: #0084ff;
+    text-shadow: 5px 5px 5px black; }
+  footer .fa-facebook:before {
+    font-size: 1.6rem;
+    color: #001aff;
+    text-shadow: 5px 5px 5px black; }
+  footer .fa-instagram:before {
+    font-size: 1.6rem;
+    color: #ff2cd8;
+    text-shadow: 5px 5px 5px black; }
+  footer .fa-youtube:before {
+    font-size: 1.6rem;
+    color: red;
+    text-shadow: 5px 5px 5px black; }
+  footer .irarriba {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; }
+  footer .footer__irarriba {
+    margin-left: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    text-shadow: 2px 2px 10px black;
+    border-radius: 3px; }
+  footer .footer__creditos {
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px #f5f5f5; }
 
-      footer {
-        background-image: url(../recursos/fondo4.jpeg);
-        background-color: black;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 1rem;
-        font-weight: 600;
-        border: inset 4px #000000;
-        box-shadow: 10px 10px 20px black;
-        height: auto;
-        background-repeat: repeat;
-        background-size: contain;
-        background-position: center;
-        background-repeat: repeat;
-        background-size: contain;
-        background-position: center; }
-      .footer__titulo {
-          color: rgb(197, 3, 61);
-          text-shadow: 5px 5px 5px #000000;
-          font-family: 'Rock Salt', cursive;
-          font-size: 2rem;
-          text-align: center;
-          font-weight: 600; }
-      .footer__menu {
-          list-style: none;
-          text-align: center;
-          margin-top: 1rem;
-          margin-bottom: 0.5rem;
-          padding-left: 0; }
-      .footer__ul__flex {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly; }
-      .footer__menu li {
-          border: 2px solid rgba(0, 0, 0, 0);
-          transition: all 0.5s;
-          border-radius: 5px; }
-      .footer__menu li:hover {
-            text-decoration: underline; }
-      .list-inline-item a i:hover {
-          text-decoration: underline; }
-      .footer__menu a {
-          color: #ffffff;
-          text-decoration: none;
-          padding: 0.2rem 0.3rem 0.2rem 0.3rem;
-          font-size: 1.3rem;
-          font-weight: 400;
-          text-shadow: 5px 5px 5px rgb(0, 0, 0); }
-      .redes {
-          display: flex;
-          color: rgb(255, 255, 255);
-          text-shadow: 5px 5px 5px rgb(0, 0, 0);}
-      .fa-twitter:before {
-          font-size: 1.6rem;
-          color: #0084ff;
-          text-shadow: 5px 5px 5px rgb(0, 0, 0); }
-      .fa-facebook:before {
-          font-size: 1.6rem;
-          color: #001aff;
-          text-shadow: 5px 5px 5px black; }
-      .fa-instagram:before {
-          font-size: 1.6rem;
-          color: #ff2cd8;
-          text-shadow: 5px 5px 5px black; }
-      .fa-youtube:before {
-          font-size: 1.6rem;
-          color: red;
-          text-shadow: 5px 5px 5px black; }
-      .irarriba {
-          margin: 0;
-          padding: 0;
-          font-size: 1rem; }
-      .footer__irarriba {
-          margin-left: 1rem;
-          background-color: rgba(255, 255, 255, 0);
-          text-shadow: 2px 2px 10px black;
-          border-radius: 3px;  }
-      .footer__creditos {
-          text-align: center;
-          font-weight: 400;
-          text-shadow: 2px 2px 10px #f5f5f5; }
-          /* ------------------------------Footer------------------------- */
-          /* ------------------------------Index Section--------------------------------- */
+/* ------------------------------Footer------------------------- */
+/* ------------------------------Index Section--------------------------------- */
+.section--index {
+  background-color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .section--index .section__flex--index {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section--index .section__titulo--index {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem; }
+  .section--index .section__titulonoticias--index {
+    color: #ffffff;
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem; }
+  .section--index .section__texto--index {
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem; }
+  .section--index .carousel {
+    max-width: 100%; }
+  .section--index .carousel__texto--index {
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px black; }
+  .section--index .img__carousel--index {
+    border-radius: 20px;
+    height: 80%;
+    width: 70%; }
 
-        .section--index {
-            background-color: #000000;
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
-        .section__flex--index{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+/* --------------------PAG CONATCTO FORM INGRESAR------------------------------ */
+.main--contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .main--contacto .section__ingresar--contacto {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+  .main--contacto .form__section__ingresar--contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main--contacto .form__texoingresar--contacto {
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px #0004ff;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem; }
 
-        .section__titulo--index{
-            color: #ffffff;
-            font-size: 1.5rem; 
-            text-shadow: 3px 3px 3px black;
-            text-align: center;
-            padding: 0rem 3rem 0rem 3rem;
+/* -------------------PAG CONTACTO FORM CONTACTO-----------*/
+.form__section__contacto--contacto {
+  display: flex;
+  flex-direction: column; }
+  .form__section__contacto--contacto .section__contacto--contacto {
+    margin-top: 3em;
+    margin-bottom: 2rem;
+    max-width: 40%;
+    width: 40%; }
+  .form__section__contacto--contacto .formulario--titulo {
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #0004ff;
+    text-align: center;
+    padding: 0rem 3rem 0rem 3rem; }
+  .form__section__contacto--contacto .label__contacto--contacto {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px #0004ff;
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem; }
+  .form__section__contacto--contacto .botonreset__contacto--contacto {
+    background-color: #001aff;
+    color: #000000;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px #c2c3f3;
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem; }
+  .form__section__contacto--contacto .botonenviar__contacto--contacto {
+    background-color: #ce0000;
+    color: #000000;
+    font-size: 1.3rem;
+    text-shadow: 3px 3px 3px white;
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem; }
 
-        }
-        .section__titulonoticias--index {
-            color: #ffffff;
-            font-size: 3rem; 
-            text-shadow: 3px 3px 3px black;
-            text-align: center;
-            padding: 0rem 3rem 0rem 3rem;
+/* ---------------------------------MEDIA QUERIES-------------- */
+@media only screen and (max-width: 480px) {
+  .header__h1 {
+    font-size: 3rem; }
+  /* --------PAG INDEX------ */
+  .carousel {
+    max-width: 90%; }
+  .section__titulonoticias--index {
+    font-size: 2rem; }
+  .section__titulo--index {
+    font-size: 1.5rem; }
+  .section__texto--index {
+    font-size: 1.2rem; } }
 
-        }
-        .section__texto--index {
-            color: #ffffff;
-            font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px black;
-            text-align: center;
-            padding: 0rem 3rem 0rem 3rem;
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  /* --------PAG INDEX------ */
+  .carousel {
+    max-width: 90%; }
+  .section__titulonoticias--index {
+    font-size: 2rem; }
+  .section__titulo--index {
+    font-size: 1.5rem; }
+  .section__texto--index {
+    font-size: 1.2rem; } }
 
-        }
-        .carousel {
-            max-width: 100%;
-        }
-        
-        .carousel__texto--index {
-            color: #ffffff;
-            font-size: 1.3rem;
-            text-shadow: 3px 3px 3px black;
-
-        }
-
-        .img__carousel--index {
-            border-radius: 20px;
-            height: 80%;
-            width: 70%;
-        }
-        /* --------------------PAG CONATCTO FORM INGRESAR------------------------------ */
-        .main--contacto{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-
-
-        .section__ingresar--contacto {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-           
-
-        }
-
-        .form__section__ingresar--contacto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;                                  
-        }
-
-        .form__texoingresar--contacto {
-            color: #ffffff;
-            font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px rgb(0, 4, 255);
-            text-align: center;
-            padding: 0rem 3rem 0rem 3rem;
-
-        }
-
-        /* -------------------PAG CONTACTO FORM CONTACTO-----------*/
-
-        .form__section__contacto--contacto {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .section__contacto--contacto {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            max-width: 40%;
-            width: 40%;
-        }
-        .formulario--titulo {
-            color: #ffffff;
-            font-size: 2rem; 
-            text-shadow: 3px 3px 3px rgb(0, 4, 255);
-            text-align: center;
-            padding: 0rem 3rem 0rem 3rem;
-        }
-        .label__contacto--contacto {
-            background-color: #000000;
-            color: #ffffff;
-            font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px rgb(0, 4, 255);
-            text-align: center;
-            margin: 0.5rem 0rem 0rem 0rem;
-
-
-        }
-        .botonreset__contacto--contacto {
-            background-color: #001aff;
-            color: #000000;
-            font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px rgb(194, 195, 243);
-            text-align: center;
-            margin: 0.5rem 0rem 0rem 0rem;
-        }
-        .botonenviar__contacto--contacto {
-            background-color: #ce0000;
-            color: #000000;
-            font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px rgb(255, 255, 255);
-            text-align: center;
-            margin: 0.5rem 0rem 0rem 0rem;
-        }
-         
-        /* ---------------------------------MEDIA QUERIES-------------- */
-
-        @media only screen and (max-width: 480px) {
-            .header__h1{
-                font-size: 3rem;
-            }
-            /* --------PAG INDEX------ */
-            .carousel {
-                max-width: 90%;
-            }
-            .section__titulonoticias--index {
-                font-size: 2rem;
-            }
-            .section__titulo--index {
-                font-size: 1.5rem;
-            }
-            .section__texto--index {
-                font-size: 1.2rem;
-            }
-
-        }
-
-
-        @media only screen and (min-width: 481px) and (max-width: 978px) {
-            /* --------PAG INDEX------ */
-            .carousel {
-                max-width: 90%;
-            }
-            .section__titulonoticias--index {
-                font-size: 2rem;
-            }
-            .section__titulo--index {
-                font-size: 1.5rem;
-            }
-            .section__texto--index {
-                font-size: 1.2rem;
-            }
-        }
-
-        @media only screen and (min-width: 979px) and (max-width: 1204px) {
-            /* --------PAG INDEX------ */
-            .carousel {
-                max-width: 90%;
-            }
-            
-        }
-
-
+@media only screen and (min-width: 979px) and (max-width: 1204px) {
+  /* --------PAG INDEX------ */
+  .carousel {
+    max-width: 90%; } }
