@@ -72,7 +72,7 @@
     font-size: 1.5rem;
     font-family: 'Odibee Sans', cursive;
     font-weight: 400;
-    color: rgba(253, 253, 253, 0.788);
+    color: $color-2;
     text-shadow: 3px 3px 3px #0000005b; }
 .navbar__texto:hover {
     text-decoration: underline; }
@@ -89,7 +89,7 @@
       footer {
         background-image: url(../recursos/fondo4.jpeg);
         background-color: black;
-        color: #ffffff;
+        color: $color-2 ;
         text-decoration: none;
         padding: 1rem;
         font-weight: 600;
@@ -129,7 +129,7 @@
           text-decoration: underline; }
            }
       .footer__menu a {
-          color: #ffffff;
+          color: $color-2;
           text-decoration: none;
           padding: 0.2rem 0.3rem 0.2rem 0.3rem;
           font-size: 1.3rem;
@@ -137,7 +137,7 @@
           text-shadow: 5px 5px 5px rgb(0, 0, 0); }
       .redes {
           display: flex;
-          color: rgb(255, 255, 255);
+          color: $color-2;
           text-shadow: 5px 5px 5px rgb(0, 0, 0);}
       .fa-twitter:before {
           font-size: 1.6rem;
@@ -167,7 +167,7 @@
       .footer__creditos {
           text-align: center;
           font-weight: 400;
-          text-shadow: 2px 2px 10px #f5f5f5; }
+          text-shadow: $color-2 ; }
            }
           /* ------------------------------Footer------------------------- */
           /* ------------------------------Index Section--------------------------------- */
@@ -184,7 +184,7 @@
         }
 
         .section__titulo--index{
-            color: #ffffff;
+            color: $color-2;
             font-size: 1.5rem; 
             text-shadow: 3px 3px 3px black;
             text-align: center;
@@ -192,7 +192,7 @@
 
         }
         .section__titulonoticias--index {
-            color: #ffffff;
+            color: $color-2 ;
             font-size: 3rem; 
             text-shadow: 3px 3px 3px black;
             text-align: center;
@@ -200,7 +200,7 @@
 
         }
         .section__texto--index {
-            color: #ffffff;
+            color: $color-2 ;
             font-size: 1.3rem; 
             text-shadow: 3px 3px 3px black;
             text-align: center;
@@ -212,7 +212,7 @@
         }
         
         .carousel__texto--index {
-            color: #ffffff;
+            color: $color-2;
             font-size: 1.3rem;
             text-shadow: 3px 3px 3px black;
 
@@ -246,7 +246,7 @@
         }
 
         .form__texoingresar--contacto {
-            color: #ffffff;
+            color: $color-2;
             font-size: 1.3rem; 
             text-shadow: 3px 3px 3px rgb(0, 4, 255);
             text-align: center;
@@ -267,15 +267,15 @@
             width: 40%;
         }
         .formulario--titulo {
-            color: #ffffff;
+            color: $color-2;
             font-size: 2rem; 
             text-shadow: 3px 3px 3px rgb(0, 4, 255);
             text-align: center;
             padding: 0rem 3rem 0rem 3rem;
         }
         .label__contacto--contacto {
-            background-color: #000000;
-            color: #ffffff;
+            background-color: $color-1;
+            color: $color-2;
             font-size: 1.3rem; 
             text-shadow: 3px 3px 3px rgb(0, 4, 255);
             text-align: center;
@@ -285,7 +285,7 @@
         }
         .botonreset__contacto--contacto {
             background-color: #001aff;
-            color: #000000;
+            color: $color-1;
             font-size: 1.3rem; 
             text-shadow: 3px 3px 3px rgb(194, 195, 243);
             text-align: center;
@@ -293,9 +293,9 @@
         }
         .botonenviar__contacto--contacto {
             background-color: #ce0000;
-            color: #000000;
+            color: $color-1;
             font-size: 1.3rem; 
-            text-shadow: 3px 3px 3px rgb(255, 255, 255);
+            text-shadow: 3px 3px 3px $color-2;
             text-align: center;
             margin: 0.5rem 0rem 0rem 0rem;
         }
