@@ -1,0 +1,107 @@
+.main--reviews {
+       background-image: url(../recursos/back1.png);
+        
+    &__titulo--reviews {
+        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        background-color: rgba(0, 0, 0, 0.637);
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        text-align: center;
+        text-shadow: 10px 10px 10px #000000bb;
+        padding-bottom: 0rem;
+        margin: 1rem 2rem 2rem 0rem; 
+    }
+    &__div--reviews {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+         }
+
+     .section__flex--reviews {
+        
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        width: 450px;
+        margin: 1rem 1rem 1rem 1rem;
+        height: auto;
+        background-color: #c7bdbd5d;
+        border-radius: 5rem;
+        
+        
+     }
+    &__titulo--reviews{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.137);
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        color: white;
+        height: 50px;
+        line-height: 50px;
+        bottom: 0;
+        
+    }
+
+     
+     &__reseña--reviews {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: #001aff;
+        color: #e2c1c1;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+     }
+    
+    &__img-reviews {
+       
+       max-width: 100%;
+       max-height: auto; 
+       object-fit: scale-down;
+       border: #f8f3f3;
+       border-radius: 2rem;
+      
+
+    }
+   
+    .overlay {
+        position: absolute;
+        margin: 0rem;
+        padding: 0rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 2rem;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000000b7;
+      
+
+    }
+    
+      
+    .section__flex--reviews:hover .overlay {
+        opacity: 1;
+    }
+
+    .fa-star {
+       color: #ffd92d;
+       
+    }
+
+    .hr__footer {
+        color: #000000;
+        height: 100%;
+    }
+    .iframe__reviews {
+        box-shadow: 5px 5px 5px #000000;
+    }
+    }

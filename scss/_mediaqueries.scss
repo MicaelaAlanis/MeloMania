@@ -1,0 +1,46 @@
+@media only screen and (max-width: 480px) {
+    .header__h1{
+        font-size: 3rem;
+    }
+    /* --------PAG INDEX------ */
+    .carousel {
+        max-width: 90%;
+    }
+    .section__titulonoticias--index {
+        font-size: 2rem;
+    }
+    .section__titulo--index {
+        font-size: 1.5rem;
+    }
+    .section__texto--index {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+    /* --------PAG INDEX------ */
+    .carousel {
+        max-width: 90%;
+    }
+    .section__titulonoticias--index {
+        font-size: 2rem;
+    }
+    .section__titulo--index {
+        font-size: 1.5rem;
+    }
+    .section__texto--index {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 979px) and (max-width: 1204px) {
+    /* --------PAG INDEX------ */
+    .carousel {
+        max-width: 90%;
+    }
+    
+}
+
+

@@ -11,6 +11,10 @@
     <!-- LINK FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Odibee+Sans&family=Oswald:wght@300&family=Rock+Salt&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
     <!-- CSS BOOTSTRAP: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
     <!-- LINK FONT AWESOME -->
@@ -22,11 +26,10 @@
     <!-- LINK CSS PROPIO -->
     <link rel="stylesheet" href="../css/estilos.css" />
   </head>
-  <body>
-
+<body>
   <div class="grid">
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000">
         <div class="container-fluid">
           <a class="navbar-brand navbar__texto" href="../index.html">
             <img src="../recursos/logo.png" alt="" width="30"height="30" class="d-inline-block align-text-top" />
@@ -40,115 +43,125 @@
               <li class="nav-item">
                 <a class="nav-link navbar__texto" aria-current="page" href="./eventos.html">Eventos</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                  Reviews
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ff0000" >
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Nacional</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Internacional</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Conciertos</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link navbar__texto" aria-current="page" href="./reviews.html">Reviews</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Galería
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #000000">
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Nacional</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Internacional</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Festivales</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link navbar__texto" aria-current="page" href="./galeria.html">Galería</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navbar__texto" href="./contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
-              <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
-
-      <p class="irabajo">
-        <a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a>
-      </p>
-      <div class="header__titulo">
+      <div class="portada">  
+        <div data-aos="zoom-aut" data-aos-duration="2000" class="header__titulo">
         <h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1"> MeloManía</h1>
       </div>
     </header>
     
-    <main>
-      
-    </main>
+    <main class="main--reviews">
+      <h2 class="main__titulo--reviews">RESEÑAS SOBRE LOS ULTIMOS RECITALES EN ARGENTINA: </h2>
+      <div class="main__div--reviews">
+        <section class="wow animate__animated animate__fadeInLeft section__flex--reviews">
+          <div class="overlay">
+            <h3 class="section__reseña--reviews">Tiago PZK hizo estallar el Movistar Arena en la presentación de su primer disco, Portales</h3>
+          </div>
+          <div> 
+            <h4 class="section__titulo--reviews">Tiago PZK <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></h4>
+            <img class="section__img-reviews zoom" src="../recursos/tiago_reviews2-editado.png" alt="imagen de tiagopzk">
+            
+          </div>
+        </section>
+        <section class="wow animate__animated animate__fadeInLeft section__flex--reviews">
+          <div class="overlay">
+            <h3 class="section__reseña--reviews">María Becerra debutó con su Animal Tour en el Estadio GEBA Este jueves 14 de abril, María Becerra se presentó por primera vez en el Estadio GEBA de Buenos Aires. Ante una multitud de 15 mil personas, la cantante argentina interpretó los hits de su álbum “Animal”.</h3>
+          </div>
+              
+          <div>  
+            <h4 class="section__titulo--reviews">Maria Becerra <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></h4>
+            <img class="section__img-reviews zoom" src="../recursos/maria_reviews-editado.png" alt="imagen de maria becerra">
+          </div>
+        </section>
+        <section class="wow animate__animated animate__fadeInLeft section__flex--reviews">
+            <div class="overlay">
+              <h3 class="section__reseña--reviews">Movistar Arena: un "festival de la canción" a todas luces,A lo largo de dos horas, el grupo puntal en la renovación del rock argentino de los ´90 ofreció casi una treintena de grandes canciones, que fueron celebradas una por una con devoción por el público que colmó el lugar y no paró de bailar. </h3>
+            </div> 
+                  
+          <div>  
+            <h4 class="section__titulo--reviews">Babasonicos <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></h4>
+            <img class="section__img-reviews zoom" src="../recursos/babasonicos-reviewsok.png" alt="imagen de babasonicos">
+          </div>
+        </section>
+        <section class="wow animate__animated animate__fadeInLeft section__flex--reviews">
+          <div class="overlay">
+            <h3 class="section__reseña--reviews">Lollapalooza Argentina: así fue el show de Miley Cyrus, una leyenda viviente. La cantante estadounidense plantó su bandera en el escenario del Lollapalooza y dejó en claro que le pertenece tras dar un show que dejó a todos sin aire.</h3>
+          </div> 
+               
+        <div>  
+          <h4 class="section__titulo--reviews">Miley Cyrus <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></h4>
+          <img class="section__img-reviews zoom" src="../recursos/miley-reviews-ok (1).png" alt="imagen de miley cirus">
+        </div>
+      </section>
+      </div>
+        <div class="conciertos">
+          <h2 class="main__titulo--reviews">Playlist recomendadas</h2>          
+          <div>
+            <iframe class="iframe__reviews" style="border-radius:12x" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4wa18yHUMuyU?utm_source=generator" width="65%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <hr width="1" size="100" class="hr__footer">
+            <iframe class="iframe__reviews" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4z6xZ4uQH4K3?utm_source=generator" width="65%" height="280"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+  </main> 
 
     <footer class="footer">
-        <h4 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">MeloManía</h4>
-        <ul class="footer__menu">
-          <div class="footer__ul__flex">
-            <div>
-              <li><a href="#">Quiénes Somos</a></li>
-            </div>
-            <div>
-              <li><a href="#">Merchandising</a></li>
-            </div>
-            <div>
-              <li><a href="#">Historia</a></li>
-            </div>
-            <div class="redes">
-              <ul class="list-unstyled">
-                <li class="list-inline-item">
-                  <a> Redes </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <h4 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">MeloManía</h4>
+    <div class="div__img--footer">
+      <img src="../recursos/logo.png" height="50"  alt="logo de la pagina">
+    </div>
+      <ul class="footer__menu">
+        <div class="footer__ul__flex">            
+         <h5>Quienes Somos?</h5>
+         <p>MeloManía® es un grupo de colaboradores dedicados a la cobertura y difusión de la escena nacional. Desde el 2021 nos decidimos a contribuir a que esta camada musical crezca sin límites. Tenemos mucha música, solo falta descubrirla.</p>
+          <div class="redes">
+            <ul class="list-unstyled">
+              <li class="list-inline-item">
+                <a>Redes</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-        </ul>
-        <p class="irarriba">
-          <a id="abajo" class="footer__irarriba" href="#arriba">Ir Arriba</a>
-        </p>
-        <div class="footer__creditos">
-          Todos los derechos reservados ©.
         </div>
-    </footer>
-  </div>
+      </ul>
+      <p class="irarriba">
+        <a id="abajo" class="footer__irarriba" href="#arriba">Ir Arriba</a>
+      </p>
+      <div class="footer__creditos">
+        Todos los derechos reservados ©.
+      </div>
+  </footer>
+</div>
     <!-- LINK JS BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -157,3 +170,6 @@
     ></script>
   </body>
 </html>
+ 
+ 
+ 

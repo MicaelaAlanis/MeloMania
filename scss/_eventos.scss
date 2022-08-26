@@ -1,0 +1,37 @@
+.main--eventos {
+   background-image: url(../recursos/footer.jpg);
+  
+    &__h2-eventos {  
+        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 3.5rem;
+        text-align: center;
+        text-shadow: 5px 5px 10px #000000bd;
+        padding-bottom: 1rem;
+        margin: 1rem 0rem 1rem 0rem;  
+        
+    }
+
+    &__div-eventos {
+        background: fixed;
+        background-image: url(../recursos/back1.png);
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000;
+        padding-top: 2rem;
+
+    }
+    &__div-cards {
+        
+        background-color: #000000fd;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border-color: #0a0a0a5b;
+        color: #fffdfec4;
+        border-radius: 3rem 3rem;
+        transform-origin: bottom;
+        box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    }
+ }
+    
+   

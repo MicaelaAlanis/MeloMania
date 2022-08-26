@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="musica, newlleters, usuario"> 
-    <meta name="description" content="suscribite para recibir las ultimas noticias"     >
+    <meta name="description" content="suscribite para recibir las ultimas noticias">
     <title>MeloManía-Contacto</title>
     <!-- LINK FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Odibee+Sans&family=Oswald:wght@300&family=Rock+Salt&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap" rel="stylesheet">
     <!-- CSS BOOTSTRAP: -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
     <!-- LINK FONT AWESOME -->
@@ -19,13 +23,13 @@
      <!-- FAVICON -->
      <link rel="icon" href="../recursos/logo.png">
     <!-- LINK CSS PROPIO -->
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css"/>
   </head>
   <body>
 
   <div class="grid">
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #000000">
         <div class="container-fluid">
           <a class="navbar-brand navbar__texto" href="../index.html">
             <img src="../recursos/logo.png" alt="" width="30"height="30" class="d-inline-block align-text-top" />
@@ -39,80 +43,26 @@
               <li class="nav-item">
                 <a class="nav-link navbar__texto" aria-current="page" href="./eventos.html">Eventos</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                  Reviews
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #000000" >
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Nacional</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Internacional</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./reviews.html">Conciertos</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link navbar__texto" aria-current="page" href="./reviews.html">Reviews</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle navbar__texto" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Galería
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #000000">
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Nacional</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Internacional</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item navbar__texto2" href="./galeria.html">Festivales</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link navbar__texto" aria-current="page" href="./galeria.html">Galería</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link navbar__texto" href="./contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <button type="button" class="btn btn-dark me-2 navbar__texto" type="button">Ingresar</button>
-              <input class="form-control me-2" type="search" placeholder="" aria-label="Search"/>
-              <button type="button" class="btn btn-dark me-2 navbar__texto" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
-
-      <p class="irabajo">
-        <a id="arriba" class="header__irabajo" href="#abajo">Ir Abajo</a>
-      </p>
-      <div class="header__titulo">
+      <div class="portada">  
+        <div data-aos="zoom-aut" data-aos-duration="2000" class="header__titulo">
         <h1 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite header__h1" id="header__h1"> MeloManía</h1>
       </div>
     </header>
-    <main>
-        <div class="main--contacto">
-            <section class="section__ingresar--contacto">
-                <form class="form__section__ingresar--contacto">
-                    <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label form__texoingresar--contacto">Usuario:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"></div>
-                    </div>
-                    <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label form__texoingresar--contacto">Contraseña:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label form__texoingresar--contacto" for="exampleCheck1">Recordarme</label>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-outline-danger">Ingresar</button>
-                </form>
-            </section>
+    <main class="main--contacto">
+        <div class="divmain--contacto">
             <section class="section__contacto--contacto">
                 <form class="form__section__contacto--contacto" action="">
                     <div class="form">
@@ -135,55 +85,51 @@
         </div>
     </main>
     <footer class="footer">
-        <h4 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">MeloManía</h4>
-        <ul class="footer__menu">
-          <div class="footer__ul__flex">
-            <div>
-              <li><a href="#">Quiénes Somos</a></li>
-            </div>
-            <div>
-              <li><a href="#">Merchandising</a></li>
-            </div>
-            <div>
-              <li><a href="#">Historia</a></li>
-            </div>
-            <div class="redes">
-              <ul class="list-unstyled">
-                <li class="list-inline-item">
-                  <a> Redes </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <h4 class="animate__animated animate__pulse animate__delay-4s animate__slow animate__infinite footer__titulo">MeloManía</h4>
+    <div class="div__img--footer">
+      <img src="../recursos/logo.png" height="50"  alt="logo de la pagina">
+    </div>
+      <ul class="footer__menu">
+        <div class="footer__ul__flex">            
+         <h5>Quienes Somos?</h5>
+         <p>MeloManía® es un grupo de colaboradores dedicados a la cobertura y difusión de la escena nacional. Desde el 2021 nos decidimos a contribuir a que esta camada musical crezca sin límites. Tenemos mucha música, solo falta descubrirla.</p>
+          <div class="redes">
+            <ul class="list-unstyled">
+              <li class="list-inline-item">
+                <a>Redes</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-        </ul>
-        <p class="irarriba">
-          <a id="abajo" class="footer__irarriba" href="#arriba">Ir Arriba</a>
-        </p>
-        <div class="footer__creditos">
-          Todos los derechos reservados ©.
         </div>
-    </footer>
-  </div>
+      </ul>
+      <p class="irarriba">
+        <a id="abajo" class="footer__irarriba" href="#arriba">Ir Arriba</a>
+      </p>
+      <div class="footer__creditos">
+        Todos los derechos reservados ©.
+      </div>
+  </footer>
+</div>
     <!-- LINK JS BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

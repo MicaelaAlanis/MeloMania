@@ -1,0 +1,88 @@
+footer {
+        background-image: url(../recursos/footer.jpg);
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 0, 0) ;
+        text-decoration: none;
+        padding: 1rem;
+        font-weight: 400;
+        border: inset 4px #000000;
+        box-shadow: 10px 10px 20px black;
+        height: auto;
+        background-repeat:repeat;
+        background-size: contain;
+        background-position: center;
+      &__titulo {
+          color: #fffb07;;
+          text-shadow: 5px 5px 5px #000000;
+          font-family: 'Alumni Sans Pinstripe', sans-serif;
+          font-size: 2rem;
+          text-align: center;
+          font-weight: 600; }
+      &__menu {
+          list-style: none;
+          text-align: center;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+          padding-left: 0; }
+      &__ul__flex {
+          display: flex;
+          flex-direction: column;
+          align-items: center;    }
+          
+     &__menu li {
+          border: 2px solid rgba(0, 0, 0, 0);
+          transition: all 0.5s;
+          border-radius: 5px; 
+      &:hover  { 
+            text-decoration: underline; }
+      &:hover {
+          text-decoration: underline; }
+           }
+      &__menu a {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+          font-size: 1.3rem;
+          font-weight: 400;
+          text-shadow: 10px 10px 10px rgb(0, 0, 0); }
+      .redes {
+          display: flex;
+          color: rgb(255, 255, 255);
+          text-shadow: 5px 5px 5px rgb(0, 0, 0);}
+      .fa-twitter:before {
+          font-size: 1.6rem;
+          color: #0084ff;
+          text-shadow: 5px 5px 5px rgb(0, 0, 0); }
+      .fa-facebook:before {
+          font-size: 1.6rem;
+          color: #001aff;
+          text-shadow: 5px 5px 5px black; }
+      .fa-instagram:before {
+          font-size: 1.6rem;
+          color: #ff2cd8;
+          text-shadow: 5px 5px 5px black; }
+      .fa-youtube:before {
+          font-size: 1.6rem;
+          color: red;
+          text-shadow: 5px 5px 5px black; }
+      .irarriba {
+          margin: 0;
+          padding: 0;
+          font-size: 1rem; }
+      &__irarriba {
+          margin-left: 1rem;
+          background-color: rgba(255, 255, 255, 0);
+          text-shadow: 2px 2px 10px black;
+          border-radius: 3px;  }
+      &__creditos {
+          text-align: center;
+          font-weight: 400;
+          text-shadow: rgb(255, 255, 255) ; }
+
+        .div__img--footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+         
+           }

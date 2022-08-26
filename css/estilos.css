@@ -1,9 +1,4 @@
-:root {
-  --color1: black;
-  --color2: violet;
-  --color3: pink;
-  --color4: blue; }
-
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,93 +6,93 @@
 
 body {
   background-color: black;
-  font-family: 'Odibee Sans', cursive; }
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow-x: hidden; }
 
-/* -----------------------------------------------------------------GRID----*/
 .grid {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto; }
-  .grid .grid header {
+  .grid header {
     grid-area: header; }
-  .grid .grid main {
+  .grid main {
     grid-area: main; }
-  .grid .grid footer {
+  .grid footer {
     grid-area: footer; }
 
-/*--------------------------------------------------------------------GRID---*/
-/*-----------------------------------------------------------------------Header---*/
-.header {
-  background-image: url("../recursos/fondo4.jpeg");
-  background-color: black;
-  background-repeat: repeat;
-  background-size: contain;
-  background-position: center;
-  height: auto; }
-  .header .header__titulo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-  .header .header__h1 {
-    font-family: 'Rock Salt', cursive;
-    text-decoration: wavy;
-    text-transform: none;
-    background-color: rgba(0, 0, 0, 0);
-    color: #c5033d;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 800;
-    border-radius: 5px;
-    text-align: center;
-    text-shadow: 10px 10px 10px #000000;
-    padding-bottom: 1rem;
-    margin: 1rem 1rem 2rem 0rem; }
-  .header .header__irabajo {
-    margin-left: 2rem;
-    background-color: rgba(0, 0, 0, 0);
-    text-shadow: 15px 15px 15px black; }
-  .header .irabajo {
-    margin-top: 0.5rem;
-    padding: 0;
-    font-size: 1rem; }
-  .header .navbar__texto {
-    font-size: 1.5rem;
-    font-family: 'Odibee Sans', cursive;
-    font-weight: 400;
-    color: rgba(253, 253, 253, 0.788);
-    text-shadow: 3px 3px 3px #0000005b; }
-  .header .navbar__texto:hover {
-    text-decoration: underline; }
-  .header .navbar__texto2 {
-    font-size: 1.5rem;
-    font-family: 'Odibee Sans', cursive;
-    color: black;
-    font-weight: 600; }
+.header .navbar {
+  max-height: 2.5rem;
+  box-shadow: 0px 5px 10px  #000000; }
 
-/*--------------------------------------------------------Header------------*/
-/* ---------------------------------Footer------------------------------- */
+.header .header__titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.header .header__h1 {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  text-decoration: wavy;
+  text-transform: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fffb07;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 800;
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: 10px 10px 10px #38003d;
+  padding-bottom: 1rem;
+  margin: 1rem 1rem 2rem 0rem; }
+
+.header .header__irabajo {
+  margin-left: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 15px 15px 15px black; }
+
+.header .irabajo {
+  margin-top: 0.5rem;
+  padding: 0;
+  font-size: 1rem; }
+
+.header .navbar__texto {
+  font-size: 2rem;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-weight: 400;
+  color: white;
+  text-shadow: 3px 3px 3px #0000005b; }
+
+.header .navbar__texto:hover {
+  text-decoration: underline; }
+
+.header .portada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: fixed;
+  background-size: cover;
+  background-image: url(../recursos/fredie-index.jpg);
+  height: 100vh; }
+
 footer {
-  background-image: url(../recursos/fondo4.jpeg);
+  background-image: url(../recursos/footer.jpg);
   background-color: black;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   border: inset 4px #000000;
   box-shadow: 10px 10px 20px black;
   height: auto;
   background-repeat: repeat;
   background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
   background-position: center; }
   footer .footer__titulo {
-    color: #c5033d;
+    color: #fffb07;
     text-shadow: 5px 5px 5px #000000;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-size: 2rem;
     text-align: center;
     font-weight: 600; }
@@ -109,8 +104,8 @@ footer {
     padding-left: 0; }
   footer .footer__ul__flex {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
+    flex-direction: column;
+    align-items: center; }
   footer .footer__menu li {
     border: 2px solid rgba(0, 0, 0, 0);
     transition: all 0.5s;
@@ -120,12 +115,12 @@ footer {
     footer .footer__menu li:hover {
       text-decoration: underline; }
   footer .footer__menu a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     padding: 0.2rem 0.3rem 0.2rem 0.3rem;
     font-size: 1.3rem;
     font-weight: 400;
-    text-shadow: 5px 5px 5px black; }
+    text-shadow: 10px 10px 10px black; }
   footer .redes {
     display: flex;
     color: white;
@@ -158,104 +153,339 @@ footer {
   footer .footer__creditos {
     text-align: center;
     font-weight: 400;
-    text-shadow: 2px 2px 10px #f5f5f5; }
-
-/* ------------------------------Footer------------------------- */
-/* ------------------------------Index Section--------------------------------- */
-.section--index {
-  background-color: #000000;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  .section--index .section__flex--index {
+    text-shadow: white; }
+  footer .div__img--footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .section--index .section__titulo--index {
-    color: #ffffff;
-    font-size: 1.5rem;
+
+.main--index {
+  background-image: url(../recursos/back1.png); }
+  .main--index .section--index {
+    background-image: url(../recursos/footer.png);
+    background-color: #000000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 20px 20px 20px black; }
+  .main--index .section__flex--index {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main--index .section__titulo--index {
+    color: white;
+    font-size: 2rem;
     text-shadow: 3px 3px 3px black;
     text-align: center;
-    padding: 0rem 3rem 0rem 3rem; }
-  .section--index .section__titulonoticias--index {
-    color: #ffffff;
-    font-size: 3rem;
+    padding: 0rem 3rem 0rem 3rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif; }
+  .main--index .section__titulonoticias--index {
+    color: white;
+    font-size: 5rem;
     text-shadow: 3px 3px 3px black;
     text-align: center;
-    padding: 0rem 3rem 0rem 3rem; }
-  .section--index .section__texto--index {
-    color: #ffffff;
+    padding: 0rem 3rem 0rem 3rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif; }
+  .main--index .section__texto--index {
+    color: white;
     font-size: 1.3rem;
     text-shadow: 3px 3px 3px black;
     text-align: center;
-    padding: 0rem 3rem 0rem 3rem; }
-  .section--index .carousel {
-    max-width: 100%; }
-  .section--index .carousel__texto--index {
-    color: #ffffff;
+    padding: 0rem 3rem 0rem 3rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif; }
+  .main--index .carousel {
+    max-width: 100%;
+    width: 100%; }
+  .main--index .carousel__texto--index {
+    color: white;
     font-size: 1.3rem;
     text-shadow: 3px 3px 3px black; }
-  .section--index .img__carousel--index {
+  .main--index .img__carousel--index {
     border-radius: 20px;
     height: 80%;
     width: 70%; }
-
-/* --------------------PAG CONATCTO FORM INGRESAR------------------------------ */
-.main--contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .main--contacto .section__ingresar--contacto {
+  .main--index .divnoticias--index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 2rem;
     margin-bottom: 2rem; }
-  .main--contacto .form__section__ingresar--contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .main--contacto .form__texoingresar--contacto {
-    color: #ffffff;
-    font-size: 1.3rem;
-    text-shadow: 3px 3px 3px #0004ff;
+  .main--index .section__noticias--index {
+    max-width: 300px;
+    width: auto;
+    margin: 0rem;
+    height: auto;
+    background-color: #c7bdbd00;
+    border-radius: 0rem;
+    box-shadow: #0084ff; }
+  .main--index .noticiatitulo--index {
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100%;
     text-align: center;
-    padding: 0rem 3rem 0rem 3rem; }
+    align-content: space-between;
+    color: white;
+    height: 3rem;
+    line-height: 3rem;
+    bottom: 0px; }
+  .main--index .noticiatexto--index {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #001aff;
+    color: #e2c1c1;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .main--index .noticiaimg--index {
+    max-width: 300px;
+    max-height: auto;
+    object-fit: scale-down;
+    border: #f8f3f3;
+    border-radius: 0rem;
+    box-shadow: #ffffff; }
+  .main--index .overlay--index {
+    position: absolute;
+    margin: 0rem;
+    padding: 0rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 0rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000b7; }
+  .main--index .section__noticias--index:hover .overlay--index {
+    opacity: 1; }
+  .main--index .div__iframe--index {
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 300px;
+    max-height: auto; }
+  .main--index .texto__index {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5;
+    text-shadow: 3px 3px 3px #000000; }
 
-/* -------------------PAG CONTACTO FORM CONTACTO-----------*/
-.form__section__contacto--contacto {
-  display: flex;
-  flex-direction: column; }
-  .form__section__contacto--contacto .section__contacto--contacto {
+.main--contacto {
+  background-image: url(../recursos/back1.png); }
+  .main--contacto .divmain--contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .main--contacto .form__section__contacto--contacto {
+    display: flex;
+    flex-direction: column; }
+  .main--contacto .section__contacto--contacto {
     margin-top: 3em;
     margin-bottom: 2rem;
     max-width: 40%;
     width: 40%; }
-  .form__section__contacto--contacto .formulario--titulo {
-    color: #ffffff;
+  .main--contacto .formulario--titulo {
+    color: white;
     font-size: 2rem;
     text-shadow: 3px 3px 3px #0004ff;
     text-align: center;
     padding: 0rem 3rem 0rem 3rem; }
-  .form__section__contacto--contacto .label__contacto--contacto {
-    background-color: #000000;
-    color: #ffffff;
+  .main--contacto .label__contacto--contacto {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     font-size: 1.3rem;
     text-shadow: 3px 3px 3px #0004ff;
     text-align: center;
     margin: 0.5rem 0rem 0rem 0rem; }
-  .form__section__contacto--contacto .botonreset__contacto--contacto {
-    background-color: #001aff;
-    color: #000000;
+  .main--contacto .botonreset__contacto--contacto {
+    background-color: #152296e0;
+    color: white;
     font-size: 1.3rem;
-    text-shadow: 3px 3px 3px #c2c3f3;
+    text-shadow: 3px 3px 3px black;
     text-align: center;
     margin: 0.5rem 0rem 0rem 0rem; }
-  .form__section__contacto--contacto .botonenviar__contacto--contacto {
-    background-color: #ce0000;
-    color: #000000;
+  .main--contacto .botonenviar__contacto--contacto {
+    background-color: #ce00cee1;
+    color: white;
     font-size: 1.3rem;
-    text-shadow: 3px 3px 3px white;
+    text-shadow: 3px 3px 3px black;
     text-align: center;
     margin: 0.5rem 0rem 0rem 0rem; }
 
-/* ---------------------------------MEDIA QUERIES-------------- */
+.main--eventos {
+  background-image: url(../recursos/footer.jpg); }
+  .main--eventos .main__h2-eventos {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000000bd;
+    padding-bottom: 1rem;
+    margin: 1rem 0rem 1rem 0rem; }
+  .main--eventos .main__div-eventos {
+    background: fixed;
+    background-image: url(../recursos/back1.png);
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    padding-top: 2rem; }
+  .main--eventos .main__div-cards {
+    background-color: #000000fd;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: #0a0a0a5b;
+    color: #fffdfec4;
+    border-radius: 3rem 3rem;
+    transform-origin: bottom;
+    box-shadow: 10px 10px 10px black; }
+
+.main--galeria {
+  background-image: url(../recursos/back1.png); }
+  .main--galeria .main__h1-galeria {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 3px 3px 3px #00000094;
+    padding-bottom: 0rem;
+    margin: 1rem 1rem 1rem 0rem; }
+  .main--galeria .div__img-galeria {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem; }
+  .main--galeria .gale {
+    height: 10rem; }
+  .main--galeria .gale__titulo {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    color: #ffffff;
+    font-size: 4.200em;
+    text-align: center;
+    margin: 0;
+    padding-top: 4rem;
+    padding-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.801); }
+  .main--galeria .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 15px;
+    padding: 40px;
+    grid-auto-flow: dense;
+    background-image: url(../recursos/back1.png); }
+  .main--galeria .galeria__item-1, .main--galeria .galeria__item-2, .main--galeria .galeria__item-3, .main--galeria .galeria__item-4, .main--galeria .galeria__item-5, .main--galeria .galeria__item-6, .main--galeria .galeria__item-7, .main--galeria .galeria__item-8, .main--galeria .galeria__item-9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 5px 0px rgba(202, 202, 202, 0.75);
+    transition: 1s; }
+  .main--galeria .galeria__item-2 {
+    background-image: url(../recursos/dukishow-galeria.jpg); }
+  .main--galeria .galeria__item-3 {
+    background-image: url(../recursos/franciscavalenzuela-galeria.jpg); }
+  .main--galeria .galeria__item-4 {
+    background-image: url(../recursos/NickyNicole-galeria.jpg); }
+  .main--galeria .galeria__item-5 {
+    background-image: url(../recursos/larenga-galeria.jpg); }
+  .main--galeria .galeria__item-6 {
+    background-image: url(../recursos/donosvaldo-galeria.jpg); }
+  .main--galeria .galeria__item-7 {
+    background-image: url(../recursos/cazzu-galeria.jpeg); }
+  .main--galeria .galeria__item-8 {
+    background-image: url(../recursos/mariabecerra-galeria.png); }
+  .main--galeria .galeria__item-9 {
+    background-image: url(../recursos/mariabecerra1-galeria.jpg); }
+  .main--galeria .div__h2--galeria {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 0;
+    color: #ffffff; }
+  .main--galeria .wide {
+    grid-column: span 2; }
+  .main--galeria .galeria div {
+    transition: 1.5s; }
+  .main--galeria .galeria div:hover {
+    transform: scale(1.3); }
+
+.main--reviews {
+  background-image: url(../recursos/back1.png); }
+  .main--reviews .main__titulo--reviews {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 10px 10px 10px #000000bb;
+    padding-bottom: 0rem;
+    margin: 1rem 2rem 2rem 0rem; }
+  .main--reviews .main__div--reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .main--reviews .section__flex--reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 450px;
+    margin: 1rem 1rem 1rem 1rem;
+    height: auto;
+    background-color: #c7bdbd5d;
+    border-radius: 5rem; }
+  .main--reviews .section__titulo--reviews {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.137);
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    bottom: 0; }
+  .main--reviews .section__reseña--reviews {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #001aff;
+    color: #e2c1c1;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .main--reviews .section__img-reviews {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: scale-down;
+    border: #f8f3f3;
+    border-radius: 2rem; }
+  .main--reviews .overlay {
+    position: absolute;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000b7; }
+  .main--reviews .section__flex--reviews:hover .overlay {
+    opacity: 1; }
+  .main--reviews .fa-star {
+    color: #ffd92d; }
+  .main--reviews .hr__footer {
+    color: #000000;
+    height: 100%; }
+  .main--reviews .iframe__reviews {
+    box-shadow: 5px 5px 5px #000000; }
+
 @media only screen and (max-width: 480px) {
   .header__h1 {
     font-size: 3rem; }
