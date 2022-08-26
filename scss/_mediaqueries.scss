@@ -1,53 +1,82 @@
+// -------------------------------------MOBILE
 @media only screen and (max-width: 480px) {
-    .header__h1{
-        font-size: 1rem;
+// ------------------------------------HEADER
+  .header{
+    .header__h1 {
+        font-size: 4rem;
     }
-    /* --------PAG INDEX------ */
-    .carousel {
-        max-width: 90%;
-    }
-    .section__titulonoticias--index {
-        font-size: 2rem;
-    }
-    .section__titulo--index {
-        font-size: 1.5rem;
-    }
-    .section__texto--index {
-        font-size: 1.2rem;
-    }
+  }
 
-
+// ----------------------------------EVENTOS
+  .main--eventos { 
+      .main__div-eventos {
+        background: fixed;
+        background-image: url(../recursos/back1.png);
+        display: flex;
+        background-color: #000000;
+        padding-top: 2rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
 }
+//----------------------------------- GALERIA
+   .main--galeria { 
+      .galeria {
+        display: grid;
+        grid-auto-rows: minmax(250px, auto);
+        gap: 15px;
+        padding: 10px;
+        justify-content: center;
+     
+     }
 
+      .gale__titulo {
+        font-size: 2rem;
+      }
+ }
 
+ }
+// ---------------------------------- CONTACTO 
+.main--contacto { 
+.form__section__contacto--contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+}
+// ------------------------------------MOBILE
+// ------------------------------------TABLET
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-    /* --------PAG INDEX------ */
-    .carousel {
-        max-width: 90%;
-    }
-    .section__titulonoticias--index {
-        font-size: 2rem;
-    }
-    .section__titulo--index {
-        font-size: 1.5rem;
-    }
-    .section__texto--index {
-        font-size: 1.2rem;
-    }
+    .main--eventos {
+        .main__div-eventos  {
+            display: flex;
+            padding-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }  
 
-    .divnoticias--index {
-        max-width: 70%;
+ }
+// -------------------------------------------------EVENTOS        
+// -------------------------------------------------GALERIA
+    .main--galeria {
+        .galeria {
+            display: grid;
+            grid-auto-rows: minmax(250px, auto);
+            gap: 15px;
+            padding: 40px;
+            grid-template-columns:none;
+        }
     }
-    .navbar {
-        max-width: 80%;
-    }
+   
+
 }
 
+
+// ------------------------------------TABLET
+// ------------------------------------DESKTOP
 @media only screen and (min-width: 979px) and (max-width: 1204px) {
-    /* --------PAG INDEX------ */
-    .carousel {
-        max-width: 90%;
-    }
     
 }
 

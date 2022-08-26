@@ -1,5 +1,5 @@
 
-     .main--galeria {    
+  .main--galeria {    
       background-image: url(../recursos/back1.png);
         .main__h1-galeria {
             font-family:'Alumni Sans Pinstripe', sans-serif;
@@ -24,33 +24,32 @@
           text-shadow: 3px 3px 3px #000000;
         }
         
-     .gale {
-    height: 10rem; }
-    .gale__titulo {
-      font-family: 'Alumni Sans Pinstripe', sans-serif;
-      color: #ffffff;
-      font-size: 4.200em;
-      text-align: center;
-      margin: 0;
-      padding-top: 4rem;
-      padding-top: 2rem; 
-      background-color: rgba(0, 0, 0, 0.801);
-    }
+      .gale {
+          height: 10rem; }
+        .gale__titulo {
+          font-family: 'Alumni Sans Pinstripe', sans-serif;
+          color: #ffffff;
+          font-size: 4.200em;
+          text-align: center;
+          margin: 0;
+          padding-top: 4rem;
+          padding-top: 2rem; 
+          background-color: rgba(0, 0, 0, 0.801);
+        }
 
       .galeria {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-auto-rows: minmax(250px, auto);
-        gap: 15px;
-        padding: 40px;
-        grid-auto-flow: dense;
-        background-image: url(../recursos/back1.png); }
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          grid-auto-rows: minmax(250px, auto);
+          gap: 15px;
+          padding: 40px;
+          grid-auto-flow: dense;
+          background-image: url(../recursos/back1.png); }
 
-        .galeria__item-1, .galeria__item-2, .galeria__item-3, .galeria__item-4, .galeria__item-5, .galeria__item-6, .galeria__item-7, .galeria__item-8, .galeria__item-9 {
+      .galeria__item-1, .galeria__item-2, .galeria__item-3, .galeria__item-4, .galeria__item-5, .galeria__item-6, .galeria__item-7, .galeria__item-8, .galeria__item-9 {
             display: flex;
             align-items: center;
             justify-content: center;
-            
             align-content: center;
             border-radius: 2px;
             background-size: cover;
@@ -77,12 +76,12 @@
                 background-image: url(../recursos/mariabecerra1-galeria.jpg);
               }    
              
-              .div__h2--galeria {
-                position: absolute;
-                top: 5px; 
-                left: 5px;
-                bottom: 0;
-                color: #ffffff;
+          .div__h2--galeria {
+              position: absolute;
+              top: 5px; 
+              left: 5px;
+              bottom: 0;
+              color: #ffffff;
                
                }
 

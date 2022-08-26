@@ -21,60 +21,47 @@ body {
   .grid footer {
     grid-area: footer; }
 
-.header .navbar {
-  max-height: 4rem;
-  box-shadow: 0px 5px 10px  #000000; }
-
-.header .header__titulo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.header .header__h1 {
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
-  text-decoration: wavy;
-  text-transform: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fffb07;
-  font-size: 6rem;
-  font-style: normal;
-  font-weight: 800;
-  border-radius: 5px;
-  text-align: center;
-  text-shadow: 10px 10px 10px #38003d;
-  padding-bottom: 1rem;
-  margin: 1rem 1rem 2rem 0rem; }
-
-.header .header__irabajo {
-  margin-left: 2rem;
-  background-color: rgba(0, 0, 0, 0);
-  text-shadow: 15px 15px 15px black; }
-
-.header .irabajo {
-  margin-top: 0.5rem;
-  padding: 0;
-  font-size: 1rem; }
-
-.header .navbar__texto {
-  font-size: 2rem;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
-  font-weight: 400;
-  color: #fffefe;
-  text-shadow: 3px 3px 3px #0000005b; }
-
-.header .navbar__texto:hover {
-  text-decoration: underline; }
-
-.header .portada {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: fixed;
-  background-size: cover;
-  background-image: url(../recursos/fredie-index.jpg);
-  height: 100vh; }
+.header {
+  overflow-x: hidden; }
+  .header .navbar {
+    max-height: 3.5rem;
+    box-shadow: 0px 5px 10px  #000000; }
+  .header .header__titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .header .header__h1 {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    text-decoration: wavy;
+    text-transform: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fffb07;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 10px 10px 10px #38003d;
+    padding-bottom: 1rem;
+    margin: 1rem 1rem 2rem 0rem; }
+  .header .navbar__texto {
+    font-size: 2rem;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 400;
+    color: #fffefe;
+    text-shadow: 3px 3px 3px #0000005b; }
+  .header .navbar__texto:hover {
+    text-decoration: underline; }
+  .header .portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: fixed;
+    background-size: cover;
+    background-image: url(../recursos/fredie-index.jpg);
+    height: 100vh; }
 
 footer {
   background-image: url(../recursos/footer.jpg);
@@ -160,7 +147,8 @@ footer {
     align-items: center; }
 
 .main--index {
-  background-image: url(../recursos/back1.png); }
+  background-image: url(../recursos/back1.png);
+  overflow-x: hidden; }
   .main--index .section--index {
     background-image: url(../recursos/footer.png);
     background-color: #000000;
@@ -418,6 +406,7 @@ footer {
 .main--reviews {
   background-image: url(../recursos/back1.png); }
   .main--reviews .main__titulo--reviews {
+    background: fixed;
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     background-color: rgba(0, 0, 0, 0.911);
     color: white;
@@ -497,34 +486,40 @@ footer {
     margin: 1rem 2rem 1rem 1rem; }
 
 @media only screen and (max-width: 480px) {
-  .header__h1 {
-    font-size: 1rem; }
-  /* --------PAG INDEX------ */
-  .carousel {
-    max-width: 90%; }
-  .section__titulonoticias--index {
-    font-size: 2rem; }
-  .section__titulo--index {
-    font-size: 1.5rem; }
-  .section__texto--index {
-    font-size: 1.2rem; } }
+  .header .header__h1 {
+    font-size: 4rem; }
+  .main--eventos .main__div-eventos {
+    background: fixed;
+    background-image: url(../recursos/back1.png);
+    display: flex;
+    background-color: #000000;
+    padding-top: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center; }
+  .main--galeria .galeria {
+    display: grid;
+    grid-auto-rows: minmax(250px, auto);
+    gap: 15px;
+    padding: 10px;
+    justify-content: center; }
+  .main--galeria .gale__titulo {
+    font-size: 2rem; } }
+
+.main--contacto .form__section__contacto--contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 @media only screen and (min-width: 481px) and (max-width: 978px) {
-  /* --------PAG INDEX------ */
-  .carousel {
-    max-width: 90%; }
-  .section__titulonoticias--index {
-    font-size: 2rem; }
-  .section__titulo--index {
-    font-size: 1.5rem; }
-  .section__texto--index {
-    font-size: 1.2rem; }
-  .divnoticias--index {
-    max-width: 70%; }
-  .navbar {
-    max-width: 80%; } }
-
-@media only screen and (min-width: 979px) and (max-width: 1204px) {
-  /* --------PAG INDEX------ */
-  .carousel {
-    max-width: 90%; } }
+  .main--eventos .main__div-eventos {
+    display: flex;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .main--galeria .galeria {
+    display: grid;
+    grid-auto-rows: minmax(250px, auto);
+    gap: 15px;
+    padding: 40px;
+    grid-template-columns: none; } }
