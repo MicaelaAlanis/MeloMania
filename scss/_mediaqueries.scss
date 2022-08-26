@@ -1,6 +1,6 @@
 @media only screen and (max-width: 480px) {
     .header__h1{
-        font-size: 3rem;
+        font-size: 1rem;
     }
     /* --------PAG INDEX------ */
     .carousel {
@@ -15,6 +15,7 @@
     .section__texto--index {
         font-size: 1.2rem;
     }
+
 
 }
 
@@ -32,6 +33,13 @@
     }
     .section__texto--index {
         font-size: 1.2rem;
+    }
+
+    .divnoticias--index {
+        max-width: 70%;
+    }
+    .navbar {
+        max-width: 80%;
     }
 }
 

@@ -1,3 +1,11 @@
-<h1> MeloMania </h1>
+<h1>MeloMania</h1>
 
-<p> Repositorio para el curso de desarrollo web </p>
+
+<p>Sitio creado para el proyecto final del curso Desarrollo Web en Coderhouse<p>
+
+
+ ## Construido con 🛠️
+ html,css3,boostrap
+
+ ## Autores ✒️
+Micaela Latorraca

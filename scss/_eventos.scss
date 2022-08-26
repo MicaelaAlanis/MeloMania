@@ -1,7 +1,7 @@
 .main--eventos {
    background-image: url(../recursos/footer.jpg);
   
-    &__h2-eventos {  
+    .main__h2-eventos {  
         font-family: 'Alumni Sans Pinstripe', sans-serif;
         background-color: rgba(0, 0, 0, 0);
         color: rgb(255, 255, 255);
@@ -13,7 +13,7 @@
         
     }
 
-    &__div-eventos {
+    .main__div-eventos {
         background: fixed;
         background-image: url(../recursos/back1.png);
         display: flex;
@@ -22,7 +22,7 @@
         padding-top: 2rem;
 
     }
-    &__div-cards {
+    .main__div-cards {
         
         background-color: #000000fd;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

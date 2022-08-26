@@ -1,17 +1,17 @@
 .main--reviews {
        background-image: url(../recursos/back1.png);
         
-    &__titulo--reviews {
+       .main__titulo--reviews {
         font-family: 'Alumni Sans Pinstripe', sans-serif;
-        background-color: rgba(0, 0, 0, 0.637);
+        background-color: rgba(0, 0, 0, 0.911);
         color: rgb(255, 255, 255);
         font-size: 3rem;
         text-align: center;
-        text-shadow: 10px 10px 10px #000000bb;
+        text-shadow: 10px 10px 10px #000000b7;
         padding-bottom: 0rem;
-        margin: 1rem 2rem 2rem 0rem; 
+        margin: 1rem 2rem 2rem 2rem; 
     }
-    &__div--reviews {
+    .main__div--reviews {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -32,7 +32,7 @@
         
         
      }
-    &__titulo--reviews{
+     .section__titulo--reviews{
         position: absolute;
         background-color: rgba(0, 0, 0, 0.137);
         width: 100%;
@@ -46,7 +46,7 @@
     }
 
      
-     &__reseña--reviews {
+    .section__reseña--reviews {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-shadow: #001aff;
         color: #e2c1c1;
@@ -62,7 +62,7 @@
 
      }
     
-    &__img-reviews {
+     .section__img-reviews {
        
        max-width: 100%;
        max-height: auto; 
@@ -103,5 +103,12 @@
     }
     .iframe__reviews {
         box-shadow: 5px 5px 5px #000000;
+        border-radius: 2rem;
+    }
+    .div__iframe--reviews {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 1rem 2rem 1rem 1rem ;
     }
     }
